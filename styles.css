@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco+Guides&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Raleway", serif;
+}
+
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    flex: 20%;
+    /* border: 1px solid red; */
+    text-align: left;
+    margin-left: 10%;
+}
+
+.logo h1{
+    color: palevioletred;
+}
+
+.menu {
+    flex: 70%;
+    /* border: 1px solid green; */
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a{
+    color: palevioletred;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+.menu a:hover{
+    color: black;
+    border-top: 4px solid palevioletred;
+}
+
+#botao{
+    background: palevioletred;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+#botao:hover{
+    border: none;
+    background: black;
+    color: palevioletred;
+}
+
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.headline{
+    margin-left: 10% ;
+    flex: 40%;
+    /* border: 1px solid black; */
+}
+
+.headline h2{
+    font-weight: 900;
+    font-size: 20px;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.img-headline{
+    margin-right: 10%;
+    flex:40%;
+    /* border: 1px solid palevioletred; */
+    text-align: center;
+}
+
+.headline p{
+    color: black;
+    text-align: left;
+}
+
+.contato-botao{
+    background: palevioletred;
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    text-align: center;
+    padding: 5px;
+    display: inline-block;
+}
+
+.contato-botao:hover{
+    background-color: black;
+    color: palevioletred;
+}
+
+section{
+    display: inline-block;
+    margin-top: 80px;
+    /* border:1px solid black; */
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    padding: 5%;
+}
+
+section h2{
+    width: 100%;
+    font-size: 25px;
+    margin: 0;
+    color: black;
+    font-weight: bold;
+}
+
+.servicos{
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.card{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid palevioletred;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.card:hover{
+    background: palevioletred;
+    color: black;
+    padding: 40px;
+}
+
+.card:hover img{
+    display: none;
+}
+
+.card-oculto{
+    display:none;
+}
+
+.card:hover .card-text{
+    display: none;
+}
+
+.card:hover .card-oculto{
+    display: block;
+}
+
+footer{
+    margin-top: 100px;
+    height: 400px;
+    background-image: linear-gradient(180deg,palevioletred,rgb(202, 53, 103));
+    text-align: center;
+    border-top: 5px solid palevioletred;
+}
+
+.logo-rodape{
+    padding: 100px;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.whats{
+    position: fixed;
+    bottom:5px;
+    right: 5px;
+}
